@@ -8,8 +8,7 @@ using namespace std;
 const int N=1e5+7;
 void abdo()
 {
-
-     ios::sync_with_stdio(0);
+    ios::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
 }
@@ -17,26 +16,23 @@ void abdo()
 
 int main()
 {
-    abdo();
-int n;
-cin>>n;
-queue<int>ss;int a,b;
-
-for(int i=0 ; i<n ; i++)
-{
-    cin>>a>>b;
-
-    if(a==1)
-    {
-        ss.push(b);
-    }else
-    {
-        if(ss.front()==b)
-            cout<<"Yes"<<endl;
-        else cout<<"No"<<endl;
-        ss.pop();
-    }
-
-}
+     abdo();
+     int n;
+     cin>>n;
+     queue<int>ss;int a,b;
+     for(int i=0 ; i<n ; i++)
+     {
+         cin>>a>>b;
+         if(a==1)
+         {
+             ss.push(b);
+         }else
+         {
+             if(ss.front()==b)
+                 cout<<"Yes"<<endl;
+             else cout<<"No"<<endl;
+             ss.pop();
+         }
+     }
     return 0;
 }
